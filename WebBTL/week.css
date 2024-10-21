@@ -1,0 +1,150 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header img :hover {
+  filter: blur(5px);
+  transition: 0.3s;
+}
+.navigation {
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main menu styling */
+.main-menu {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+}
+
+.main-menu > li {
+  position: relative;
+}
+#udline:hover {
+  text-decoration: underline orangered;
+  scroll-padding-top: 5px;
+}
+/* Submenu */
+.submenu,
+.sub-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+.submenu li {
+  position: relative;
+}
+
+.sub-submenu {
+  top: 0;
+  left: 100%;
+}
+
+/* Show submenu on hover */
+nav ul li:hover > .submenu,
+.submenu li:hover > .sub-submenu {
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #eaeaea;
+}
+
+/* Optional styling for appearance */
+nav ul li a {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+}
+
+.submenu li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.picture {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/07/40/14/c9/pepe-la-poule.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.main-top {
+  display: flex;
+  justify-content: center;
+  margin: 40px 40px 40px 40px;
+}
+.setB {
+  margin: 0 20px 0 20px;
+}
+.name-set {
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.dishes strong {
+  color: rgba(0, 0, 0, 0.696);
+}
+.dishes {
+  color: rgba(0, 0, 0, 0.545);
+}
+.note {
+  color: rgba(0, 0, 0, 0.545);
+  font-size: 12px;
+}
+.underline {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.134);
+  padding: 20px;
+  margin: 10px 100px 10px 100px;
+}
+
+.container-dish {
+  margin: 10px;
+}
+.img-dish img {
+  width: 70%;
+}
+.img-dish {
+  text-align: center;
+}
+.name-dish {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.66);
+  font-size: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(235, 95, 35);
+  opacity: 80%;
+  width: 100%;
+  height: 300px;
+}
+.img1 {
+  margin-left: 20px;
+}

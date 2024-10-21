@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header img :hover {
+  filter: blur(5px);
+  transition: 0.3s;
+}
+.navigation {
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main menu styling */
+.main-menu {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+}
+
+.main-menu > li {
+  position: relative;
+}
+#udline:hover {
+  text-decoration: underline orangered;
+  scroll-padding-top: 5px;
+}
+/* Submenu */
+.submenu,
+.sub-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.sub-submenu {
+  top: 0;
+  left: 100%;
+}
+
+/* Show submenu on hover */
+nav ul li:hover > .submenu,
+.submenu li:hover > .sub-submenu {
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #eaeaea;
+}
+
+/* Optional styling for appearance */
+nav ul li a {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+}
+
+.submenu li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.picture {
+  background-image: url(https://cdn.thewirecutter.com/wp-content/media/2022/12/non-alcoholic-wine-2048px-0050-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.main {
+  background-color: antiquewhite;
+}
+.p-first {
+  color: orangered;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.p-second {
+  display: block;
+}
+.p-sd2 {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+}
+.p-sd3 {
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  background-color: rgb(235, 95, 35);
+  opacity: 80%;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.img1 a {
+  margin-left: 20px;
+}

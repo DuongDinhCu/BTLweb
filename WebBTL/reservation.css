@@ -1,0 +1,138 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header img :hover {
+  filter: blur(5px);
+  transition: 0.3s;
+}
+.navigation {
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main menu styling */
+.main-menu {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+}
+
+.main-menu > li {
+  position: relative;
+}
+#udline:hover {
+  text-decoration: underline orangered;
+  scroll-padding-top: 5px;
+}
+/* Submenu */
+.submenu,
+.sub-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.sub-submenu {
+  top: 0;
+  left: 100%;
+}
+
+/* Show submenu on hover */
+nav ul li:hover > .submenu,
+.submenu li:hover > .sub-submenu {
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #eaeaea;
+}
+
+/* Optional styling for appearance */
+nav ul li a {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+}
+
+.submenu li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.picture {
+  background-image: url(https://www.vietwork.jp/wp-content/uploads/2024/06/pepe-la-poule-roof-top-860x484.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(250, 235, 215, 0.381);
+  margin-top: 50px;
+}
+.form div {
+  cursor: default;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+.form input {
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.321);
+  background: transparent;
+  transition: 0.3s ease-in-out;
+}
+.form input:hover {
+  border: 2px solid orange;
+  transform: scale(1.04);
+}
+.btn-reservation input {
+  transition: 0.3s ease-in-out;
+}
+.btn-reservation input:hover {
+  background-image: url(https://cdn.pixabay.com/photo/2022/08/16/17/31/lake-7390865_960_720.jpg);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(235, 95, 35);
+  opacity: 80%;
+  width: 100%;
+  height: 300px;
+}
+.img1 {
+  margin-left: 20px;
+}
